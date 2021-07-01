@@ -5,10 +5,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+}
+.App{
   align-content: center;
   align-items: center;
+
 }
-.topbar{
+.topbar
+{
   text-align: center;
   padding: 20px;
   text-transform: uppercase;
@@ -41,15 +45,58 @@
   align-items: center;
   box-shadow: 0 5px 5px;
 }
+.downpart{
+  align-items: center;
+  margin: auto;
+  padding: 5%;
+}
+.downheading{
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  color:black;
+  border-bottom: 2px solid black;
+}
+
+.downcenter{
+  padding-top: 40px;
+  margin:auto;
+  width: 60%;
+}
+.flexpart{
+
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+}
+
+.downsingle{
+  width:33%;
+
+}
+
 @media only screen and (max-width: 1068px) {
   .each{
     width: 33%;
+  }.flexpart{
+
+    display:flex;
+    flex-direction: column;
+    align-items:center;
   }
+.downsingle{
+    margin: auto;
+    width: 80%;
+}
 
 }
 @media only screen and (max-width: 768px) {
   .each{
     width: 50%;
+  }
+  .downsingle{
+    width: 90%;
+    margin: auto;
   }
 
 }
